@@ -7,7 +7,7 @@ import java.sql.SQLException;
 
 public class StudentsQueries {
 
-	private static final String DATABASE_URL="jdbc:derby:C:\\Users\\yehudit\\Documents\\îãòé äîçùá - äàåğéáøñéèä äôúåçä\\ñãğä áúëğåú îú÷ãí áùôú â'àååä 20503\\JDBC Lecture\\students";
+	private static final String DATABASE_URL="jdbc:derby:C:\\Users\\yehudit\\Documents\\××“×¢×™ ×”××—×©×‘ - ×”××•× ×™×‘×¨×¡×™×˜×” ×”×¤×ª×•×—×”\\×¡×“× ×” ×‘×ª×›× ×•×ª ××ª×§×“× ×‘×©×¤×ª ×’'××•×•×” 20503\\JDBC Lecture\\students";
 	private static final String USERNAME="kerido";
 	private static final String PASSWORD="kerido";
 	
@@ -129,7 +129,7 @@ public class StudentsQueries {
 	}
 	
 	//this method execute third query and presents her results
-	public int addStudent(int ID, String privateName, String lastName, String adress, int phone)
+	public int addStudent(int ID, String privateName, String lastName, String address, int phone)
 	{
 		int result=0; 
 		try
@@ -137,7 +137,7 @@ public class StudentsQueries {
 			insertNewStudent.setInt(1, ID);
 			insertNewStudent.setString(2, privateName);
 			insertNewStudent.setString(3, lastName);
-			insertNewStudent.setString(4, adress);
+			insertNewStudent.setString(4, address);
 			
 			result=insertNewStudent.executeUpdate();
 		}
@@ -178,3 +178,4 @@ public class StudentsQueries {
 				}
 			}
 }
+
